@@ -102,7 +102,7 @@ class Simproc:
 			else:
 				self.memory[int(dst)] -= 1
 
-		elif inst in JMP_LIST:
+		elif inst in JUMP_LIST:
 			val = args[0]
 			if inst == 'JNZ' and self.r0 != 0:
 				self.ip = int(val)
