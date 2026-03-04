@@ -106,7 +106,7 @@ class Simproc:
 			val = args[0]
 			if inst == 'JNZ' and self.r0 != 0:
 				self.ip = int(val)
-			elif inst == 'JZ' and == 0:
+			elif inst == 'JZ' and self.r0 == 0:
 				self.ip = int(val)
 			elif inst == 'JMP':
 				self.ip = int (val)
